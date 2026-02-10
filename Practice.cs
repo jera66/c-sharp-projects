@@ -77,25 +77,80 @@ class Practice
 // If income is below $25,000 and age is over 60, print "Eligible for senior support."
 // For all other cases, print "Standard applicant."
 
-Console.WriteLine("Please enter your annual income: ");
-int income = int.Parse(Console.ReadLine());
+// Console.WriteLine("Please enter your annual income: ");
+// int income = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Please enter your age: ");
-int age = int.Parse(Console.ReadLine());
+// Console.WriteLine("Please enter your age: ");
+// int age = int.Parse(Console.ReadLine());
 
-if (income > 50000 && age < 30)
+// if (income > 50000 && age < 30)
+//         {
+//             Console.WriteLine("High earner, young professional.");
+//         }
+// else if (income < 25000 && age > 60)
+//         {
+//             Console.WriteLine("Eligible for senior support.");
+//         }
+// else
+//         {
+//             Console.WriteLine("Standard applicant.");
+//         }
+// ======================================================================================================================================
+// Write a program that asks for three numbers.
+
+// Print out which one is the largest, and if two or all three are equal, print a message saying so.
+
+// Try to cover every possible case—even if all three numbers are the same.
+Console.WriteLine("You're required to enter three numbers.");
+Console.WriteLine("Please enter the first number: ");
+int firstNum = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Please enter the second number: ");
+int secondNum = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Please enter the third number: ");
+int thirdNum = int.Parse(Console.ReadLine());
+
+if (firstNum == secondNum && firstNum == thirdNum)
         {
-            Console.WriteLine("High earner, young professional.");
+             Console.WriteLine("All three numbers are equal.");
         }
-else if (income < 25000 && age > 60)
+else if (firstNum >= secondNum && firstNum >= thirdNum)
         {
-            Console.WriteLine("Eligible for senior support.");
+            if (firstNum == secondNum)
+            {
+                Console.WriteLine(firstNum + " and " + secondNum + " are equal and the largest numbers.");
+            }
+            else if (firstNum == thirdNum)
+            {
+                Console.WriteLine(firstNum + " and" + thirdNum + " are equal and the largest numbers.");
+            }
+            else
+            {
+                Console.WriteLine(firstNum + " is the largest number.");
+            }
         }
+else if (secondNum >= firstNum && secondNum >= thirdNum)
+            {
+                if (secondNum == firstNum)
+                {
+                    Console.WriteLine(secondNum + " and" + firstNum + " are equal and the largest numbers.");
+                }
+                else if (secondNum == thirdNum)
+                {
+                    Console.WriteLine(secondNum + " and" + thirdNum + " are equal and the largest numbers.");
+                }
+                else
+                {
+                    Console.WriteLine(secondNum + "is the largest number.");
+                }
+            }
 else
         {
-            Console.WriteLine("Standard applicant.");
+            Console.WriteLine(thirdNum + " is the largest number.");
+        }
         }
     }
 
 
-}
+
