@@ -161,38 +161,57 @@ class Practice
 // If income is between $20,000 and $100,000, print “Adult, middle income.”
 // If income is over $100,000, print “Adult, high income.”
 
-Console.WriteLine("What's your age?");
-int age = int.Parse(Console.ReadLine());
+// Console.WriteLine("What's your age?");
+// int age = int.Parse(Console.ReadLine());
 
-Console.WriteLine("What's your annual income?");
-double income = double.Parse(Console.ReadLine());
+// Console.WriteLine("What's your annual income?");
+// double income = double.Parse(Console.ReadLine());
 
-if (age < 18)
-    {
-        Console.WriteLine("Minor");
-    }
-else if (age >= 65 && income < 30000)
+// if (age < 18)
+//     {
+//         Console.WriteLine("Minor");
+//     }
+// else if (age >= 65 && income < 30000)
+//         {
+//             Console.WriteLine("Senior eligible for aid.");
+//         }
+// else if (age >= 65 && income >= 30000)
+//         {
+//             Console.WriteLine("Senior not eligible for aid.");
+//         }
+// else if (age >= 18 && age <= 64)
+//         {
+//         if (income < 20000)
+//             {
+//                 Console.WriteLine("Adult, low income.");
+//             }
+//         else if (income >= 20000 && income <= 100000)
+//             {
+//                 Console.WriteLine("Adult, middle income.");
+//             }
+//         else
+//             {
+//                 Console.WriteLine("Adult, high income.");
+//             }
+//         }
+// ==============================================================================================================================
+// Write a for loop from 1 to 15.
+
+// If the number is divisible by 4, skip printing it (use continue).
+// If the number reaches 12, stop the loop completely (use break).
+// Print all other numbers.
+// ====================================================================================================================================
+for (int i = 1; i <= 15; i++)
         {
-            Console.WriteLine("Senior eligible for aid.");
-        }
-else if (age >= 65 && income >= 30000)
-        {
-            Console.WriteLine("Senior not eligible for aid.");
-        }
-else if (age >= 18 && age <= 64)
-        {
-        if (income < 20000)
+            if (i % 4 == 0)
             {
-                Console.WriteLine("Adult, low income.");
+                continue;
             }
-        else if (income >= 20000 && income <= 100000)
+            if (i == 12)
             {
-                Console.WriteLine("Adult, middle income.");
+                break;
             }
-        else
-            {
-                Console.WriteLine("Adult, high income.");
-            }
+            Console.WriteLine(i);
         }
         }
     }
