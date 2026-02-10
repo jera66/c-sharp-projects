@@ -4,23 +4,23 @@ class Practice
 {
     static void Main()
     {   
-        string name = "Jerathel";
-        string hobby = "building apps";
-        int age = 35;
-        Console.WriteLine("Hello, my name is " + name + ", my favorite hobby is " + hobby + " and I am " + age + " years old.");
+        // string name = "Jerathel";
+        // string hobby = "building apps";
+        // int age = 35;
+        // Console.WriteLine("Hello, my name is " + name + ", my favorite hobby is " + hobby + " and I am " + age + " years old.");
 
-        if (age < 35)
-        {
-            Console.WriteLine("You're younger than " + age);
-        }
-        else if (age == 35)
-        {
-            Console.WriteLine("You're exactly " + age);
-        }
-        else
-        {
-            Console.WriteLine("You're older than " + age);
-        }
+        // if (age < 35)
+        // {
+        //     Console.WriteLine("You're younger than " + age);
+        // }
+        // else if (age == 35)
+        // {
+        //     Console.WriteLine("You're exactly " + age);
+        // }
+        // else
+        // {
+        //     Console.WriteLine("You're older than " + age);
+        // }
 // ==================================================================================================================
 // Write a program that asks for a user’s score (0–100).
 
@@ -55,20 +55,45 @@ class Practice
 // "Satisfactory" if it’s 70–84
 // "Outstanding" if it’s 85 or above.
 // ====================================================================================================================
-Console.WriteLine("Please enter your test score: ");
-int score = int.Parse(Console.ReadLine());
+// Console.WriteLine("Please enter your test score: ");
+// int score = int.Parse(Console.ReadLine());
 
-if (score < 70)
+// if (score < 70)
+//         {
+//             Console.WriteLine("Your score needs improvement");
+//         }
+//         else if (score >= 70 && score <= 84)
+//         {
+//             Console.WriteLine("Your score is satisfactory");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Your score is outstanding");
+//         }
+
+// ====================================================================================================================
+//Write a program that asks the user for their annual income and age.
+// If income is above $50,000 and age is under 30, print "High earner, young professional."
+// If income is below $25,000 and age is over 60, print "Eligible for senior support."
+// For all other cases, print "Standard applicant."
+
+Console.WriteLine("Please enter your annual income: ");
+int income = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Please enter your age: ");
+int age = int.Parse(Console.ReadLine());
+
+if (income > 50000 && age < 30)
         {
-            Console.WriteLine("Your score needs improvement");
+            Console.WriteLine("High earner, young professional.");
         }
-        else if (score >= 70 && score <= 84)
+else if (income < 25000 && age > 60)
         {
-            Console.WriteLine("Your score is satisfactory");
+            Console.WriteLine("Eligible for senior support.");
         }
-        else
+else
         {
-            Console.WriteLine("Your score is outstanding");
+            Console.WriteLine("Standard applicant.");
         }
     }
 
