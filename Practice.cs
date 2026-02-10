@@ -30,22 +30,22 @@ class Practice
 
 // Give it a shot!
 // ===================================================================================================================
-Console.WriteLine("Please enter your score (0-100):");
+// Console.WriteLine("Please enter your score (0-100):");
 
-int score = int.Parse(Console.ReadLine());
+// int score = 85;
 
-if (score < 60)
-        {
-            Console.WriteLine("Your score is Fail!");
-        }
-else if (score >= 60 && score <= 79)
-        {
-            Console.WriteLine("Your score is Pass!");
-        }
-else
-        {
-            Console.WriteLine("Your score is Excellent!");
-        }
+// if (score < 60)
+//         {
+//             Console.WriteLine("Your score is Fail!");
+//         }
+// else if (score >= 60 && score <= 79)
+//         {
+//             Console.WriteLine("Your score is Pass!");
+//         }
+// else
+//         {
+//             Console.WriteLine("Your score is Excellent!");
+//         }
 // ====================================================================================================================
 // Write a program that asks for three test scores.
 
@@ -55,7 +55,21 @@ else
 // "Satisfactory" if it’s 70–84
 // "Outstanding" if it’s 85 or above.
 // ====================================================================================================================
+Console.WriteLine("Please enter your test score: ");
+int score = int.Parse(Console.ReadLine());
 
+if (score < 70)
+        {
+            Console.WriteLine("Your score needs improvement");
+        }
+        else if (score >= 70 && score <= 84)
+        {
+            Console.WriteLine("Your score is satisfactory");
+        }
+        else
+        {
+            Console.WriteLine("Your score is outstanding");
+        }
     }
 
 
